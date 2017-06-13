@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta property="og:url"                content="https://www.hackdav.tech" />
+        <meta property="og:title"              content="HackDAV: India's first High School Hackathon" />
+        <meta property="og:description"        content="Started in 2015, HackDAV is India's first hackathon exclusively for high school students. For 36 hours from July 7th - July 9th, HackDAV will bring together 300 programmers - beginners and experts alike to collaborate and build awesome projects. Join us by applying here." />
+        <meta property="og:image"              content="https://goo.gl/2hT73r" />
+
+        <meta name="description" content="Started in 2015, HackDAV is India's first hackathon exclusively for high school students. For 36 hours from July 7th - July 9th, HackDAV will bring together 300 programmers - beginners and experts alike to collaborate and build awesome projects. Join us by applying here.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Prevent Safari mobile to change phone call tag to hyperlink -->
+        <meta name="format-detection" content="telephone=no">
+        <title>HackDAV</title>
+
+        <!-- Disable tap highlight on IE -->
+        <meta name="msapplication-tap-highlight" content="no">
+
+        <!-- Web Application Manifest -->
+        <link rel="manifest" href="manifest.json">
+
+        <!-- Add to homescreen for Chrome on Android -->
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="HackDAV">
+        <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
+
+        <!-- Add to homescreen for Safari on iOS -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#c9a833">
+        <meta name="apple-mobile-web-app-title" content="HackDAV">
+        <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+        <!-- Tile icon for Win8 (144x144 + tile color) -->
+        <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+        <meta name="msapplication-TileColor" content="#c9a833">
+
+        <!-- Color the status bar on mobile devices -->
+        <meta name="theme-color" content="#c9a833">
+
+        <!-- Material Design icons -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+        <!-- Material Design Lite page styles:
+        You can choose other color schemes from the CDN, more info here http://www.getmdl.io/customize/index.html
+        Format: material.color1-color2.min.css, some examples:
+        material.red-teal.min.css
+        material.blue-orange.min.css
+        material.purple-indigo.min.css
+        -->
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue-indigo.min.css" />
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        
+        <!-- Your styles -->
+        <link rel="stylesheet" href="styles/main.css">
+  
+        <!-- Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Megrim|Quantico|Ubuntu|Josefin+Sans" rel="stylesheet">
+    </head>
+    <body class="mdl-demo body_color mdl-color-text--blue-grey-700 mdl-base">
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header primary_color">
+            <div class="mdl-layout__tab-bar primary_color">
+                <span class="mdl-layout-title">
+                        <a href="/" title="HackDAV Homepage"><img class="logo mdl-layout--large-screen-only" src="images/hackdav_logo.png"></a>
+                </span>
+                <div class="mdl-layout-spacer"></div>
+                <nav class="mdl-navigation mdl-layout--large-screen-only">
+                    <a href="#overview" class="mdl-layout__tab">Home</a>
+                    <a href="#schedule" class="mdl-layout__tab">Schedule</a>
+                    <a href="#resources" class="mdl-layout__tab">Resources</a>
+                    <a href="#CoC" class="mdl-layout__tab">Code of Conduct</a>
+                    <a class="freespace"></a>
+                </nav>
+            </div>
+            </header>
+            <div class="mdl-layout mdl-js-layout mdl-layout__drawer mdl-layout--small-screen-only">
+                <span class="mdl-layout-title">HackDAV</span>
+                <nav class="mdl-navigation">
+                    <div class="mdl-navigation__link" id="homebutn">Home</div>
+                    <div class="mdl-navigation__link" id="schedulebutn">Schedule</div>
+                    <div class="mdl-navigation__link" id="resourcesbutn">Resources</div>
+                    <div class="mdl-navigation__link" id="cocbutn">Code of Conduct</div>
+                </nav>
+            </div>
+            <a class="mdl-layout--small-screen-only" href="#apply"><button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-shadow--8dp" id="add">
+                    <i class="material-icons" role="presentation">create</i>
+                <span class="visuallyhidden">Apply</span>
+            </button></a>
+            <main class="mdl-layout__content">
+                <div class="mdl-layout__tab-panel is-active" id="overview">
+                <div class="mdl-layout__title">
+                    <br>
+                    <div id="mainText">HACKDAV</div>
+                    <div id="dateText">July 7-9 </div>
+                    <div class="centerwrap">
+                        <br>
+                        <a href="#apply"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-shadow--8dp" id="applyButton">Apply</button></a>
+                    </div>
+                </div>    
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text" id="bodyText">
+                                <h3>What is HackDAV?</h3>
+                                Started in 2015, HackDAV is India's first hackathon exclusively for high school students. The event is open to anyone with a knack for programming - beginners and experts alike. The second edition of HackDAV, to be organised over a period of 36 hours from the 7th to the 9th of July, will bring together 300 high school programmers from all over Odisha to collaborate and work on their ideas.<br><br>
+                                Do you have an idea that you always wanted to work on but could not for some reason or another? Start working on it at HackDAV. You will have access to experienced mentors and a competitive environment to get you ticking, eventually helping you work at astounding levels of productivity.<br><br>
+                                We have everything to keep you excited: free food, workshops, awesome prizes, speakers who have been in the industry for practically their entire lives, free food, swag. Did we mention there's free food and swag to flaunt your participation? Yeah, there's that too.<br><br>
+                                This year, we have a mysterious lunch package that will blow your mind away on day 2. Apply before the priority window closes.
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text" id="bodyText">
+                                <h3>Frequently Asked Questions</h3>
+                                <div class="mdl-grid">
+                                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                    <h4>Who can attend?</h4>
+                                    All high school students are welcome. We will also conduct an online hackathon for students worldwide. If you can not attend the on-site event in Bhubaneswar (we highly recommend attending the on-site event though), watch this space as registration for the online hacathon begins later this month. Priority round for HackDAV is open till the 16th of June, 2017, 11:59:59  PM IST. You will receive an email if you are selected.<br>
+                                    If you are in college, you can contact us to become one of the mentors.<br>
+                                    Students who just graduated from high school can still apply but spaces are limited.<br><br>
+                                    <h4>I don't code -- neither have I ever been to a hackathon before. What about me?</h4>
+                                    Not all hackers code! In fact, you've found the perfect place and time to pick up new skills and concepts. There will be mentors, workshops, and tech talks by pofessionals on mobile app development, full stack web development, the recent shift towards Progressive Web Applications (fun fact: our website is a PWA with offline access enabled) and many more to help ease you through the hackathon experience.<br>Applications are not filtered based on experience.<br><br>
+                                    <h4>What is at stake?</h4>
+                                    Rest assured, there is plenty of stuff for everybody.
+                                    Once you submit your application, you will get an email from us with details pertaining to the prizes at stake and hackathon rules.<br>
+                                    After you report at the hackathon, you will also receive a participant package with the goodies, schedule, the style guide, and our entire playlist for the event.<br>
+                                    We will keep posting updates on our Facebook page. Follow us to stay connected.
+                                </div>
+                                <div class="mdl-cell mdl-cell--6-col-desktop mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+                                    <h4>What are the fees like?</h4>
+                                    They are like, you know, non-existent. HackDAV is a free event and you are not expected to pay anything. We will cater to your needs and provide you with food, swag kits and an unforgettable time. We want you to go back from here having learnt something, and knowledge should be accessible to everyone. Right?<br><br>
+                                    <h4>What should I bring?</h4>
+                                    You should bring your laptop, phone, chargers and extension cords (optional) and your school ID for admission into the event.<br>
+                                    We will provide everything else - round the clock access to WiFi, snacks, sponsor swag, and hacker love.<br><br><br>
+                                    <h4>Why does the schedule page say TBA?</h4>
+                                    Because we are adding more fun workshops to the schedule. We will be releasing more details in the coming weeks.<br>
+                                    The hackathon is scheduled to start at 7:00 AM on Friday, July 7th and the participants will go back on each day at 7:00 PM. The closing ceremony will commence at 5:30 PM on Sunday, July 9th. The final schedule will be announced in the last week of June.<br><br>
+                                    <h4>I still have questions.</h4>
+                                    Awesome! We love the inquisitive kinds. Drop us an email at <a href="mailto:info@hackdav.tech?Subject=Saying%20Hello">info@hackdav.tech</a>.<br>
+                                    You can also get in touch with us via our <a href="#facebook">Facebook page</a>.
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text">
+                                <h3>Where is the hackathon being organised?</h3>
+                            </div>
+                            <div id="map"></div>
+                        </div>
+                    </section>
+                    <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
+                        <div class="mdl-card mdl-cell mdl-cell--12-col">
+                            <div class="mdl-card__supporting-text">
+                                <h3>Our Partners</h3>
+                                <div class="centerwrap">
+                                    <a href="https://goo.gl/cXlA8i"><button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-shadow--2dp" id="deck">Sponsorship Deck</button></a>
+                                </div>
+                                <div id="sponsorText">
+                                Interested in sponsoring HackDAV?<br>
+                                Access our sponsorship deck above or email us at <a href="mailto:info@hackdav.tech?Subject=Sponsorship%20Details">info@hackdav.tech</a>. We would love to have you on board.
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class=" centerwrap mdl-cell mdl-cell--12-col">
+                                        <img id="gdg" src="images/GDGBBSR.png">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="hearth" src="images/hackerearth.png">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col-desktop mdl-layout-spacer mdl-layout--large-screen-only">
+                                    </div>
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="tech" src="images/tech.png">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="jet" src="images/jetbrains.svg">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col-desktop mdl-layout-spacer mdl-layout--large-screen-only">
+                                    </div>
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="sketch" src="images/sketch.png">
+                                    </div>
+                                </div>
+                                <div class="mdl-grid">
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="soy" src="images/soylent.png">
+                                    </div>
+                                    <div class="mdl-cell mdl-cell--2-col-desktop mdl-layout-spacer mdl-layout--large-screen-only">
+                                    </div>
+                                    <div class="centerwrap mdl-cell mdl-cell--5-col-desktop mdl-cell--4-col-tablet">
+                                        <img id="stick" src="images/stickermule.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <div class="mdl-layout__tab-panel" id="schedule">
+                    <section class="section--center mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--12-col centerwrap">
+                            <h4>TBA.<br><br><br>Soon.<br><br><br>Quite soon.</h4>
+                            <p class="tempcontain2"></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="mdl-layout__tab-panel" id="resources">
+                    <section class="section--center mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--12-col centerwrap">
+                            <h4>Our elves are out there, gathering awesome resources for you.<br><br><br>Come back later. &lt;3</h4>
+                            <p class="tempcontain1"></p>
+                        </div>
+                    </section>
+                </div>
+                <div class="mdl-layout__tab-panel" id="CoC">
+                    <section class="section--center mdl-grid mdl-grid--no-spacing">
+                        <div class="mdl-cell mdl-cell--12-col">
+                            <h2>Code of Conduct</h2>
+                            <br><br>
+                            All attendees, sponsors, partners, volunteers and staff at our hackathon are required to agree with the following code of conduct. Organisers will enforce this code throughout the event. We expect cooperation from all participants to ensure a safe environment for everybody.
+                            <br><br>
+                            <ul class="toc">
+                                <h4>Contents</h4>
+                                <a href="#shortv">The Quick Version</a>
+                                <a href="#longv">The Less Quick Version</a>
+                            </ul><br>
+                            <p id="shortv"><h4>&lt;/&gt; The Quick Version</h4>
+                            Our hackathon is dedicated to providing a harassment-free experience for everyone, regardless of the following.
+                            <ul>
+                                <li>gender</li>
+                                <li>gender identity and expression</li>
+                                <li>age</li>
+                                <li>sexual orientation</li>
+                                <li>disability</li>
+                                <li>physical appearance</li>
+                                <li>body size</li>
+                                <li>race</li>
+                                <li>ethnicity</li>
+                                <li>nationality</li>
+                                <li>religion</li>
+                                <li>previous hackathon attendance or lack of</li>
+                                <li>computing experience or lack of</li>
+                                <li>chosen programming language or tech stack</li>
+                            </ul>
+                            <p>
+                                We do not tolerate harassment of hackathon participants in any form. Sexual language and imagery is not appropriate at any hackathon venue, this includes the following.
+                            </p>
+                            <ul>
+                                <li>hacks</li>
+                                <li>talks, presentations, or demos</li>
+                                <li>workshops</li>
+                                <li>any parties associated to the hackathon</li>
+                                <li>social media</li>
+                                <li>any other online media</li>
+                            </ul>
+                            <p>
+                                Hackathon participants violating these rules <strong>may be sanctioned or expelled</strong> from the hackathon at the discretion of the hackathon organisers.
+                            </p><br><br>
+                            <p id="longv">
+                            <h4><span style="vertical-align: -15%;"><i class="material-icons">note_add</i></span> The Less Quick Version</h4>
+                            <p>
+                                Harassment includes offensive verbal comments related to gender, gender identity and expression, age, sexual orientation, disability, physical appearance, body size, race, ethnicity, nationality, or religion, sexual images in public spaces, deliberate intimidation, stalking, following, photography or audio/video recording against reasonable consent, sustained disruption of talks or other events, inappropriate physical contact, and unwelcome sexual attention.
+                            </p>
+                            <p>
+                                Photography is encouraged, but other participants must be given a reasonable chance to opt out from being photographed. If they object to the taking of their photograph, comply with their request. It is inappropriate to take photographs in contexts where people have a reasonable expectation of privacy.
+                            </p>
+                            <p>
+                                Participants asked to stop any harassing behavior are expected to comply immediately.
+                            </p>
+                            <p>
+                                As this is a hackathon, we like to explicitly note that the hacks created at our hackathon are equally subject to the anti-harassment policy.
+                            </p>
+                            <p>
+                                Sponsors and partners are also subject to the anti-harassment policy. In particular, sponsors should not use sexualised images, activities, or other material. Sponsor representatives (including volunteers) should not use sexualised clothing/uniforms/costumes, or otherwise create a sexualised environment.
+                            </p>
+                            <p>
+                                If you are being harassed, notice that someone else is being harassed, or have any other concerns, please contact a member of hackathon staff immediately.
+                            </p>
+                            <p>
+                                Hackathon staff will be happy to help participants contact any local security or local law enforcement, provide escorts, or otherwise assist those experiencing harassment to feel safe for the duration of the hackathon. We value your attendance.
+                            </p>
+                            <p>
+                                If a participant engages in harassing behavior, the hackathon organisers may take any action they deem appropriate. This includes warning the offender, expulsion from the hackathon with no refund (if applicable), or reporting their behaviour to local law enforcement.
+                            </p>
+                            <p>
+                                We expect participants to follow these rules at hackathon and workshop venues and hackathon-related social events.
+                            </p><br>
+                            <p>
+                                <strong>The Conference is what you make of it, and as a community we can create a great experience for everyone.</strong>
+                            </p><br><br>
+                        </div>
+                    </section>
+                </div>
+                <footer class="mdl-mega-footer footer_color">
+                    <div class="mdl-mega-footer--middle-section">
+                        <div class="centerfoot mdl-grid">
+                            <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone" id="phone-hold">
+                                <a href="tel:+91-73-27-080977"><i id="phone" class="material-icons" role="presentation">phone</i></a>
+                                <a href="mailto:info@hackdav.tech?Subject=Saying%20Hello"><i id="email" class="material-icons" role="presentation">email</i></a>
+                                <a href="https://goo.gl/XqsvTz">
+                                    <svg style="width:5vh;height:5vh" viewBox="0 0 24 24" id="facebook">
+                                    <path fill="#e0e0e0" d="M5,3H19A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3M18,5H15.5A3.5,3.5 0 0,0 12,8.5V11H10V14H12V21H15V14H18V11H15V9A1,1 0 0,1 16,8H18V5Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mdl-mega-footer--bottom-section centerwrap" id="footer">
+                        <a href="https://facebook.com/deeprajpandey" target="_blank" id="footer">Made with <span style="color: #e74c3c">&hearts;</span> by Deepraj</a><br>
+                        <div id="license"><span>&copy;</span> 2017 HackDAV | Released under the <a rel="license" href="https://github.com/DeeprajPandey/HackDAV/blob/master/LICENSE.txt" target="_blank" id="license">CC BY-SA 4.0 International License</a>.</div>
+                    </div>
+                </footer>
+            </main>
+        </div>
+        
+        <span id="start" class="target"><!-- Hidden anchor to close all modals --></span>
+        <span id="apply" class="target"><!-- Hidden anchor to open adjusting modal container--></span>
+        <div class="modal">
+            <div class="content vertical-align-middle">
+                <iframe id="typeform-full" width="100%" height="100%" frameborder="0" src="https://hackdav.typeform.com/to/QJXq2d"></iframe>
+                <a class="close-btn" href="#start">X</a>
+            </div>
+        </div>
+        <div class="loader">
+            <svg viewBox="0 0 32 32" width="32" height="32">
+                <circle id="spinner" cx="16" cy="16" r="14" fill="none"></circle>
+            </svg>
+        </div>
+    </body>
+    <!-- Link material.js -->
+    <script defer async src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <!-- build:js scripts/main.min.js -->
+    <script type="text/javascript" src="scripts/main.js"></script>
+    <!-- endbuild -->
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                                })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-70147403-2', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <!-- Drawer Button Behaviour -->
+    <script>
+        $('#homebutn').on("click", function() {
+            $('#overview').addClass("is-active");
+            $('#schedule').removeClass("is-active");
+            $('#resources').removeClass("is-active");
+            $('#Coc').removeClass("is-active");
+        });
+        $('#schedulebutn').on("click", function() {
+            $('#overview').removeClass("is-active");
+            $('#schedule').addClass("is-active");
+            $('#resources').removeClass("is-active");
+            $('#Coc').removeClass("is-active");
+        });
+        $('#resourcesbutn').on("click", function() {
+            $('#overview').removeClass("is-active");
+            $('#schedule').removeClass("is-active");
+            $('#resources').addClass("is-active");
+            $('#Coc').removeClass("is-active");
+        });
+        $('#cocbutn').on("click", function() {
+            $('#overview').removeClass("is-active");
+            $('#schedule').removeClass("is-active");
+            $('#resources').removeClass("is-active");
+            $('#CoC').addClass("is-active");
+        });
+    </script>
+    <!--Google Maps -->
+    <script>
+        function initMap() {
+        // Styles a map in night mode.
+        var HDAVcentre = {lat: 20.235031, lng: 85.811960};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 15,
+            center: HDAVcentre,
+            gestureHandling: 'cooperative',
+            styles: [
+                {elementType: 'geometry', stylers: [{color: '#242f3e'}]},
+                {elementType: 'labels.text.stroke', stylers: [{color: '#242f3e'}]},
+                {elementType: 'labels.text.fill', stylers: [{color: '#746855'}]},
+                {
+                    featureType: 'administrative.locality',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#d59563'}]
+                },
+                {
+                    featureType: 'poi',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#d59563'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'geometry',
+                    stylers: [{color: '#263c3f'}]
+                },
+                {
+                    featureType: 'poi.park',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#6b9a76'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry',
+                    stylers: [{color: '#38414e'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'geometry.stroke',
+                    stylers: [{color: '#212a37'}]
+                },
+                {
+                    featureType: 'road',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#9ca5b3'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry',
+                    stylers: [{color: '#746855'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'geometry.stroke',
+                    stylers: [{color: '#1f2835'}]
+                },
+                {
+                    featureType: 'road.highway',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#f3d19c'}]
+                },
+                {
+                    featureType: 'transit',
+                    elementType: 'geometry',
+                    stylers: [{color: '#2f3948'}]
+                },
+                {
+                    featureType: 'transit.station',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#d59563'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'geometry',
+                    stylers: [{color: '#17263c'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.fill',
+                    stylers: [{color: '#515c6d'}]
+                },
+                {
+                    featureType: 'water',
+                    elementType: 'labels.text.stroke',
+                    stylers: [{color: '#17263c'}]
+                }
+            ]
+            });
+            var marker = new google.maps.Marker({
+                position: HDAVcentre,
+                map: map,
+                title: 'Click to Zoom'
+            });
+            map.addListener('center_changed', function() {
+                // 3 seconds after the center of the map has changed, pan back to the
+                // marker.
+                window.setTimeout(function() {
+                    map.panTo(marker.getPosition());
+                }, 3000);
+            });
+
+            marker.addListener('click', function() {
+                map.setZoom(15);
+                map.setCenter(marker.getPosition());
+            });
+        }
+    </script>
+    <script defer async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDamD9Y0LGEdmcunnKvSRqzjtiV9dc4x-s&callback=initMap"></script>
+    <!-- End of Google Maps build -->
+    <!-- Typeform Embed -->
+    <script defer async type="text/javascript" src="https://embed.typeform.com/embed.js"></script>
+    <noscript>
+      Please enable JavaScript to view this website.
+    </noscript>
+</html>
