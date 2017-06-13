@@ -1,0 +1,25 @@
+{
+  "version": "1.0.0",
+  "name": "HackDAV",
+  "launch_path": "/index.html",
+  "description": "Event website for HackDAV - India's first hackathon exclusively for high school students.",
+  "icons": {
+    "128": "/images/touch/icon-128x128.png"
+  },
+  "developer": {
+    "name": "Deepraj Pandey",
+    "url": "https://www.github.com/DeeprajPandey"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "HackDAV",
+      "description": "Event website for HackDAV - India's first hackathon exclusively for high school students."
+    }
+  }
+}
